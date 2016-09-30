@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		01096BF6E668EA282C69B84F1CCB3E0D /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A180D707A71331F4BE4C34B64AE84610 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		012FA5C9E60D9D6F3B29402C380BD223 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 35371FF675FD29925FBD2309D2724349 /* NSNotificationCenter+AnyPromise.m */; };
-		020CFE04B1A50BBD6707E5C21345554B /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF2EF4A6BC30BB3BF72BE9CD63F74EF /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020CFE04B1A50BBD6707E5C21345554B /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF2EF4A6BC30BB3BF72BE9CD63F74EF /* DDASLLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		031EF27E830276D4BEB45ACA590EC88B /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FBA3FD8D6BCC97BCEB7827F6B4AD4 /* SPTSpec.m */; };
 		055A26F1585CA14E22617D65E13995D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822B597CC8A3759A8EC4DF6BB1D78E4 /* Foundation.framework */; };
-		09E3531575BB296FD752EE743F12C5FC /* GRToolkitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CF2070B27E3CBF7163A9587CC498D4 /* GRToolkitLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E3531575BB296FD752EE743F12C5FC /* GRToolkitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CF2070B27E3CBF7163A9587CC498D4 /* GRToolkitLogging.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		0C6FF91EB1F0391ED75DC72D31D159EF /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7A0FDBC44EB28EDD41A9077C0A36E /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D16B556212D317A0D4FEB71E102E207 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = CD20BF37A3E667983C1209434D2BAF8B /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E0CEA238E22E376D8B877489ADDD6A2 /* OMGUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EB87F4AACDB03590EB8DD14F14D5A4 /* OMGUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,10 +57,10 @@
 		39D2BC432D68275A5FFED70FCE4B7A1A /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BDCC6C820FE39A16662174607682E1 /* race.swift */; };
 		3B5B7495707BF7133B9FB3F834045611 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA29058FD823D193FA9789DB7766877 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B6113FDEEB219E1AC39D5DEBC96EDC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822B597CC8A3759A8EC4DF6BB1D78E4 /* Foundation.framework */; };
-		3B7420C8A6E113B62221DFCDE3359927 /* LoadableCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 31FBCAAC57743FDD7D4E2E8498F0CC0B /* LoadableCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B7420C8A6E113B62221DFCDE3359927 /* LoadableCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 31FBCAAC57743FDD7D4E2E8498F0CC0B /* LoadableCategory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3C2700C7DAA15C6AF84A595865C42F4D /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = B97355C3C212B60B412C459D47F4712A /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		403292D82DA62291204BF59524BC4EDB /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B7667B3E94E26CFFA37C524650BB5C /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		40A3FEBC28CF980705E95424CBAEFEFF /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E25218677430998A4988165B33ED45 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40A3FEBC28CF980705E95424CBAEFEFF /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E25218677430998A4988165B33ED45 /* DDLog.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		46137F5CC368BF38BAF0D0AF81DD8FFE /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 00FB55786FA1C53D89E9D7F725D6F4C4 /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46A235A9E42590A37A207A20ED836A56 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDF972D7CA21DA5BC3469EA0AC7174 /* after.swift */; };
 		471FD4F68E27AB26FA2AEBB8B245CEE4 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5269A78E2FB0BA4158F0A2278767EC /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -87,7 +87,7 @@
 		5FBA82432BD69F8767D6C47A308588FC /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4787A14FE6619E46BADC597311C65880 /* UIView+AnyPromise.m */; };
 		62520EC7D6C073473EED85EE381BCD14 /* GRCoreData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53FCAF0AC8BBC8E81A56324174B5D0 /* GRCoreData-dummy.m */; };
 		6299864647599CA8FE12C3263F12EAC0 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BAC79B90F559B70F474F7288384EB /* Promise+Properties.swift */; };
-		645C7A9BBC80B9D087E1BE3E508DC704 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE58A5185C78959DF4C0C99B75A3FB7 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		645C7A9BBC80B9D087E1BE3E508DC704 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE58A5185C78959DF4C0C99B75A3FB7 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		65BC31095CCDFC80CBF6BBA843751F23 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D5322365C10D6EC5A0E6B596BB312979 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A27898E989A3FA5C15AA671C4536F0 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A691E9D67F2F592A60ED40806D5DFB /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		67459AD239EF669A365519E06B45DCFE /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C17D5DE15311DBA3019A79AE40F4AE /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -127,6 +127,7 @@
 		90214D7580565CC001B15AA61D40BAEF /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 412DA4BD1A5BBF58D99DDAF10A8ABB0C /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		918E06480F28F27361B19D19432F8538 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC8E840518973B21E3E4F335BF869A /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		931D410B9F8ACB935883DF8C59F9C93E /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D98AAD6998EDF3DA720A9CBF031FE71 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		932D84361D9EE63F00DC4C7E /* GRCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 932D84341D9EE5B800DC4C7E /* GRCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94C47C87E397972CE98F75929F3B706C /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F99AC173E43AB937C2C87D9CF47BF /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		98AE60C898CD06213B4EB5D57B01F954 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 516BEF684E333026049540EB2C225CFC /* PromiseKit-dummy.m */; };
 		9B2E761A064459F77EA9870BEF03ACC3 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BA65DB37571A424C477B9291EEF6 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -159,7 +160,7 @@
 		BD5174EBB8520CA6A1513E4577855C4B /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD86C20BBB60077DE1A187E65A68CFB /* SPTExampleGroup.m */; };
 		BEFFE9FFE52E9A0833A7D2D8FB67EB4D /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A831949832ED6549361F3A43B5460A3 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C01343EF73C801CFBDDEBF71C3FD5AD3 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8881522BE0BC70EAA8D34D70E745E546 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2F1DD151895B28CD2F3F704AEE1C7E3 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E46A020E1AE4837A104748D4C01A57DD /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F1DD151895B28CD2F3F704AEE1C7E3 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E46A020E1AE4837A104748D4C01A57DD /* DDFileLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C5EFF9CFFE8FD3F187B0ED1A707465ED /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 449C3149CAC1DBFF14AFFFF00ED78593 /* XCTestCase+Specta.m */; };
 		CC60C8EDD6728E8F08EB98806FE05422 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90475F8075BCBBCFC0C992B996C536F /* XCTest.framework */; };
 		CE3F4ECBB0BC095577D66AE50C8E604C /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = F1466D4D5752214419436E86FDB04292 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -382,6 +383,7 @@
 		8EC24C69E1019E34C45E4D3F5B5F6464 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
 		8FEC821808506FC06DBC218E397362D3 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
 		91DA958272B424C3BED4403EDB0924E6 /* PMKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMKAlertController.swift; path = Categories/UIKit/PMKAlertController.swift; sourceTree = "<group>"; };
+		932D84341D9EE5B800DC4C7E /* GRCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRCoreData.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		959DBD377CC0C29D4979F657304BF329 /* Pods-GRCoreData_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GRCoreData_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		963740FA96A27E8107DDED1FC0F34474 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
@@ -841,6 +843,7 @@
 		87D8F83480AB0E24ACB65F2491459D90 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				932D84341D9EE5B800DC4C7E /* GRCoreData.h */,
 				4AD15CCBC3954BDD2D8F24C4BB482838 /* GRCoreDataStack.h */,
 				5995E2104CE34C4A6523ED986E8417A6 /* GRCoreDataStack.m */,
 				42CF2070B27E3CBF7163A9587CC498D4 /* GRToolkitLogging.h */,
@@ -1068,15 +1071,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872A6699D4B491DE2775073938508BD4 /* GRCoreData-umbrella.h in Headers */,
+				B03B2AD657A58862D8C2C4AB99332EEE /* GRCoreDataStack.h in Headers */,
+				F694E4AD472F5C0E9F7F35B334D47A5F /* NSManagedObject+GRExtension.h in Headers */,
+				3B7420C8A6E113B62221DFCDE3359927 /* LoadableCategory.h in Headers */,
+				932D84361D9EE63F00DC4C7E /* GRCoreData.h in Headers */,
+				09E3531575BB296FD752EE743F12C5FC /* GRToolkitLogging.h in Headers */,
 				020CFE04B1A50BBD6707E5C21345554B /* DDASLLogger.h in Headers */,
 				C2F1DD151895B28CD2F3F704AEE1C7E3 /* DDFileLogger.h in Headers */,
 				40A3FEBC28CF980705E95424CBAEFEFF /* DDLog.h in Headers */,
 				645C7A9BBC80B9D087E1BE3E508DC704 /* DDTTYLogger.h in Headers */,
-				872A6699D4B491DE2775073938508BD4 /* GRCoreData-umbrella.h in Headers */,
-				B03B2AD657A58862D8C2C4AB99332EEE /* GRCoreDataStack.h in Headers */,
-				09E3531575BB296FD752EE743F12C5FC /* GRToolkitLogging.h in Headers */,
-				3B7420C8A6E113B62221DFCDE3359927 /* LoadableCategory.h in Headers */,
-				F694E4AD472F5C0E9F7F35B334D47A5F /* NSManagedObject+GRExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

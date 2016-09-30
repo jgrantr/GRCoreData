@@ -36,7 +36,7 @@ CoreDataStack with support for multiple contexts and some much-needed syntactic 
   #   'GRCoreData' => ['GRCoreData/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'GRCoreData/Classes/GRCoreData*.h', 'GRCoreData/Classes/NSManagedObject*.h'
   s.frameworks = 'Foundation', 'CoreData'
   s.dependency 'PromiseKit', '~> 3.5'
 end
