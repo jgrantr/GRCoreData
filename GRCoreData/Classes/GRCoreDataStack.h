@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import <PromiseKit/PromiseKit.h>
+
+@class AnyPromise;
 
 typedef void (^GRManagedObjectSaveCompletion)();
 

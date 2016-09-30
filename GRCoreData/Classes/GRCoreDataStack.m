@@ -10,6 +10,7 @@
 #import "NSManagedObject+GRExtension.h"
 #import "DDLog.h"
 #import <objc/runtime.h>
+#import <PromiseKit/PromiseKit.h>
 
 #ifdef PRODUCTION
 static int ddLogLevel = LOG_LEVEL_INFO;
