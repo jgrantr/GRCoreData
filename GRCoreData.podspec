@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GRCoreData'
-  s.version          = '0.1.0'
+  s.version          = '1.0'
   s.summary          = 'A short description of GRCoreData.'
 
 # This description is used to generate tags and improve search results.
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+CoreDataStack with support for multiple contexts and some much-needed syntactic sugar.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/GRCoreData'
+  s.homepage         = 'https://github.com/jgrantr/GRCoreData'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Grant Robinson' => 'grant@zayda.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/GRCoreData.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jgrantr/GRCoreData.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation', 'CoreData'
+  s.dependency 'PromiseKit', '~> 3.5'
 end
