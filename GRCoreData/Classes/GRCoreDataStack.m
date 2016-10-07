@@ -12,11 +12,7 @@
 #import <objc/runtime.h>
 #import <PromiseKit/PromiseKit.h>
 
-#ifdef PRODUCTION
-static int ddLogLevel = LOG_LEVEL_INFO;
-#else
-static int ddLogLevel = LOG_LEVEL_INFO;
-#endif
+#import "MyLogging.h"
 
 
 static char keySaveCompletionHandler;
@@ -381,10 +377,20 @@ static NSMutableDictionary *blockSaveDict;
 	}];
 }
 
-- (AnyPromise *) promiseBlock:(CoreDataBlock)block {
+- (void) performBlock:(CoreDataBlockWithValue)block completionWithValue:(void (^)(id value))valueCompletion {
+	NSManagedObjectContext *childContext = [self childBackgroundContext];
+	[childContext performBlock:^{
+		id value = block(childContext);
+		dispatch_async(dispatch_get_main_queue(), ^{
+			valueCompletion(value);
+		});
+	}];
+}
+
+- (AnyPromise *) promiseBlock:(CoreDataBlockWithValue)block {
 	return [AnyPromise promiseWithResolverBlock:^(PMKResolver  _Nonnull resolve) {
-		[self performBlock:block completion:^{
-			resolve(nil);
+		[self performBlock:block completionWithValue:^(id value) {
+			resolve(value);
 		}];
 	}];
 }

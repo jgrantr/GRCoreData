@@ -25,6 +25,7 @@ typedef void (^GRManagedObjectSaveCompletion)();
 @end
 
 typedef void (^CoreDataBlock)(NSManagedObjectContext *context);
+typedef id (^CoreDataBlockWithValue)(NSManagedObjectContext *context);
 
 @interface GRCoreDataStack : NSObject
 {
@@ -50,7 +51,7 @@ typedef void (^CoreDataBlock)(NSManagedObjectContext *context);
 
 - (void) performBlock:(CoreDataBlock)block completion:(void (^)())completionBlock;
 /** then's nothing when completed */
-- (AnyPromise *) promiseBlock:(CoreDataBlock)block;
+- (AnyPromise *) promiseBlock:(CoreDataBlockWithValue)block;
 
 - (void) loadModelObjects:(NSArray *)values usingClass:(Class)modelClass afterEach:(void (^)(NSManagedObjectContext *context, id lastObject))afterEach completion:(void (^)(NSMutableSet *updatedObjects))completionBlock;
 /** Then's a list of updated objects when completed */

@@ -9,7 +9,7 @@
 #import "GRCoreDataStack.h"
 #import "LoadableCategory.h"
 
-#import "GRToolkitLogging.h"
+#import "MyLogging.h"
 
 @interface NSDictionary (GRCJson)
 
@@ -121,6 +121,15 @@ void setCachedObject(id<NSCopying>key, id value) {
 + (void) load {
 	_cacheQueue = dispatch_queue_create("com.meinc.NSManagedObjectCache", NULL);
 	objectCache = [[NSMutableDictionary alloc] initWithCapacity:100];
+	NSLocale *enUSPosixLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+	fromFormatShort = [[NSDateFormatter alloc] init];
+	[fromFormatShort setLenient:YES];
+	[fromFormatShort setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+	fromFormatShort.locale = enUSPosixLocale;
+	fromFormatLong = [[NSDateFormatter alloc] init];
+	[fromFormatLong setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
+	fromFormatLong.locale = enUSPosixLocale;
+
 }
 
 + (dispatch_queue_t) dispatchQueue {
