@@ -85,11 +85,11 @@ static NSMutableDictionary *blockSaveDict;
 
 @implementation GRCoreDataStack
 
-+ (int) ddLogLevel {
++ (DDLogLevel) ddLogLevel {
 	return ddLogLevel;
 }
 
-+ (void) ddSetLogLevel:(int)logLevel {
++ (void) ddSetLogLevel:(DDLogLevel)logLevel {
 	ddLogLevel = logLevel;
 }
 
