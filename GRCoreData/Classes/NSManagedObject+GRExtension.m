@@ -441,7 +441,7 @@ void setCachedObject(id<NSCopying>key, id value) {
                         break;
                     case NSDateAttributeType:
                     {
-						dict[key] = @((long long)[(NSDate *)value timeIntervalSince1970] * 1000);
+						dict[key] = @((long long)([(NSDate *)value timeIntervalSince1970] * 1000.0));
                         break;
                     }
                     default:
