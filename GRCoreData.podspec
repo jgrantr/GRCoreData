@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GRCoreData'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'Helpful code for working with Core Data'
 
 # This description is used to generate tags and improve search results.

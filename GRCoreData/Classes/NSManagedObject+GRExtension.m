@@ -11,6 +11,9 @@
 
 #import "MyLogging.h"
 
+extern DDLogLevel GRC_ddLogLevel;
+
+
 @interface NSDictionary (GRCJson)
 
 - (id) grc_objectForKeyOrNil:(id)key;
@@ -219,7 +222,7 @@ void setCachedObject(id<NSCopying>key, id value) {
 			return obj;
 		}
 		else {
-			DDLogError(@"we are hosed, we have an objectID (%@) cached for key %@, but no object", objectId, key);
+			DDLogWarn(@"cache inconsitencty: we have an objectID (%@) cached for key %@, but no object", objectId, key);
 			setCachedObject(key, nil);
 			return fetchObject();
 		}
@@ -445,7 +448,7 @@ void setCachedObject(id<NSCopying>key, id value) {
                         break;
                     }
                     default:
-                        DDLogInfo(@"ignoring attribute %@ which is of type %lu", attribute, (unsigned long)type);
+                        DDLogDebug(@"ignoring attribute %@ which is of type %lu", attribute, (unsigned long)type);
                         break;
                 }
             }

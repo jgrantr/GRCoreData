@@ -14,6 +14,8 @@
 
 #import "MyLogging.h"
 
+DDLogLevel GRC_ddLogLevel = DDLogLevelInfo;
+
 
 static char keySaveCompletionHandler;
 
@@ -85,12 +87,13 @@ static NSMutableDictionary *blockSaveDict;
 
 @implementation GRCoreDataStack
 
+
 + (DDLogLevel) ddLogLevel {
-	return ddLogLevel;
+	return GRC_ddLogLevel;
 }
 
 + (void) ddSetLogLevel:(DDLogLevel)logLevel {
-	ddLogLevel = logLevel;
+	GRC_ddLogLevel = logLevel;
 }
 
 @synthesize masterContext, mainContext, model, coordinator, backgroundContext;
