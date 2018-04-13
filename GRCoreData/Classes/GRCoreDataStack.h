@@ -11,7 +11,7 @@
 
 @class AnyPromise;
 
-typedef void (^GRManagedObjectSaveCompletion)();
+typedef void (^GRManagedObjectSaveCompletion)(void);
 
 @interface NSManagedObjectContext (GRExtensions)
 
@@ -49,7 +49,7 @@ typedef id (^CoreDataBlockWithValue)(NSManagedObjectContext *context);
 - (void) returnScratchContext:(NSManagedObjectContext *)scratchContext;
 - (NSManagedObjectContext *) throwawayContext;
 
-- (void) performBlock:(CoreDataBlock)block completion:(void (^)())completionBlock;
+- (void) performBlock:(CoreDataBlock)block completion:(void (^)(void))completionBlock;
 /** then's nothing when completed */
 - (AnyPromise *) promiseBlock:(CoreDataBlockWithValue)block;
 

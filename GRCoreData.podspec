@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GRCoreData'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Helpful code for working with Core Data'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,6 @@ CoreDataStack with support for multiple contexts and some much-needed syntactic 
   s.public_header_files = 'GRCoreData/Classes/GRCoreData*.h', 'GRCoreData/Classes/NSManagedObject*.h'
   s.frameworks = 'Foundation', 'CoreData'
   s.dependency 'PromiseKit'
-  s.dependency 'CocoaLumberjack', '~> 2.4'
+  s.dependency 'CocoaLumberjack', '~> 3.2'
 
 end

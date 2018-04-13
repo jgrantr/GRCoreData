@@ -14,4 +14,8 @@
 
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
+#undef LOG_LEVEL_DEF
+
+#define LOG_LEVEL_DEF GRC_ddLogLevel
+
 #endif /* MyLogging_h */

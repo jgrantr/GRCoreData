@@ -4,12 +4,13 @@
 //  Created by Grant Robinson on 12/8/12.
 //  Copyright (c) 2012 Grant Robinson. All rights reserved.
 //
+#import "MyLogging.h"
+
 
 #import "NSManagedObject+GRExtension.h"
 #import "GRCoreDataStack.h"
 #import "LoadableCategory.h"
 
-#import "MyLogging.h"
 
 extern DDLogLevel GRC_ddLogLevel;
 
@@ -199,7 +200,7 @@ void setCachedObject(id<NSCopying>key, id value) {
 		return nil;
 	}
 	id<NSCopying> key = [self cacheKeyFromId:uniqueId];
-	id (^fetchObject)() = ^id {
+	id (^fetchObject)(void) = ^id {
 		NSEntityDescription *entity = [self entityInManagedObjectContext:context];
 		NSString *jsonKey = [entity.userInfo objectForKey:@"jsonUniqueKey"];
 		//		NSLog(@"uniqueId %@ for key %@", uniqueId, jsonKey);
@@ -222,7 +223,7 @@ void setCachedObject(id<NSCopying>key, id value) {
 			return obj;
 		}
 		else {
-			DDLogWarn(@"cache inconsitencty: we have an objectID (%@) cached for key %@, but no object", objectId, key);
+			DDLogWarn(@"cache inconsistency: we have an objectID (%@) cached for key %@, but no object", objectId, key);
 			setCachedObject(key, nil);
 			return fetchObject();
 		}

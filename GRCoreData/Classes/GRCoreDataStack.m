@@ -6,13 +6,13 @@
 //  Copyright © 2016 Grant Robinson. All rights reserved.
 //
 
+#import "MyLogging.h"
+
 #import "GRCoreDataStack.h"
 #import "NSManagedObject+GRExtension.h"
-#import "DDLog.h"
 #import <objc/runtime.h>
 #import <PromiseKit/PromiseKit.h>
 
-#import "MyLogging.h"
 
 DDLogLevel GRC_ddLogLevel = DDLogLevelInfo;
 
@@ -358,7 +358,7 @@ static NSMutableDictionary *blockSaveDict;
 	[scratchContexts removeObject:scratchContext];
 }
 
-- (void) performBlock:(CoreDataBlock)block completion:(void (^)())completionBlock {
+- (void) performBlock:(CoreDataBlock)block completion:(void (^)(void))completionBlock {
 	NSManagedObjectContext *childContext = [self childBackgroundContext];
 	[childContext performBlock:^{
 		childContext.saveCompletion = completionBlock;
