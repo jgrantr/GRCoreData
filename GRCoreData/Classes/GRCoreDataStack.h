@@ -77,6 +77,7 @@ typedef id (^CoreDataBlockWithValue)(NSManagedObjectContext *context);
 - (NSURL *) storeUrl;
 // must override in subclasses to point to the model for the application
 - (NSURL *) modelURL;
-
+// override in subclasses to the change the type of persistent store to use
+- (NSString *) persistentStoreType;
 
 @end

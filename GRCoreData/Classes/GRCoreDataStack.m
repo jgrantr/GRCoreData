@@ -229,17 +229,20 @@ static NSMutableDictionary *blockSaveDict;
 	return nil;
 }
 
+- (NSString *) persistentStoreType {
+	return NSSQLiteStoreType;
+}
+
 - (void) addPeristentStore {
 	NSError *error = nil;
 	NSURL *storeURL = [self storeUrl];
+	NSString *type = [self persistentStoreType];
 	NSFileManager *fileManager = [[NSFileManager alloc] init];
 	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
 							 [NSNumber numberWithBool:YES],
 							 NSMigratePersistentStoresAutomaticallyOption,
 							 [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
-	if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType
-								   configuration:nil URL:storeURL options:options error:&error])
-	{
+	if (![coordinator addPersistentStoreWithType:type configuration:nil URL:storeURL options:options error:&error]) {
 		error = nil;
 		[fileManager removeItemAtURL:storeURL error:&error];
 		error = nil;
